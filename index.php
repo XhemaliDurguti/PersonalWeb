@@ -18,7 +18,7 @@
 <body>
     <!-- Header design -->
     <header>
-        <a href="#" class="logo">Xh <span>e</span>ma</a>
+        <a href="#" class="logo">Xh<span>e</span>ma</a>
 
         <ul class="navlist">
             <li><a href="#home" class="active">Home</a></li>
@@ -43,8 +43,20 @@
             <a href="#" class="btn2"><span><i class="bx bx-play"></i></span>Watch My Work</a>
         </div>
     </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Creative UI/UX Designer!</h4>
+            <p>Check out 10 Best Design's updates for the top web design & development companies for your needs by reviewing our list & development companies! Find the best web design. Web Design Consulting. Comprehensive Directory. Top Reviewed Design Firms. Types: Enterprise Design Firms, Startup Design Firms, Custom Design Firms, eCommerce Design Firms, App Design Firms. Custom Web Solution. 24x7 Customer Support. Secure Payment Gateway. Get A Free Web Quote. 24/7 Chat Support. Services: Web Page Design, Landing Page Design, App development, Mobile Website Design</p>
+            <a href="#" class="btn">More About</a>
+        </div>
+    </section>
     <!-- custom js link-->
-    <script type="text/javascript" src="./assets/js/script.js></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>
