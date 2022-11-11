@@ -147,6 +147,34 @@
             </div>
         </div>
     </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>If You Have Any Project In Your Mind.</h4>
+            <p>I`m a UI\UX Designer -creating blog & brave interface design for companies all across the world.</p>
+            <div class="list">
+                <li><a href="#">049135136</a></li>
+                <li><a href="#">xdurguti7@gmail.com</a></li>
+                <li><a href="#">Like Share & Subsribe</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email Addres" required />
+                <input type="" placeholder="Your Mobile Number" required />
+                <textarea name="" id="" cols="35" rows="10" placeholder="Your Message Here...."></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+        </div>
+    </section>
     <!-- custom js link-->
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
