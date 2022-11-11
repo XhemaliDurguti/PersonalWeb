@@ -90,6 +90,63 @@
             </div>
         </div>
     </section>
+    <!-- Portfolio section design -->
+    <section class="portfoli" id="portfolio">
+        <div class="main-text">
+            <p>Portfolio</p>
+            <h2><span>Latest</span> Project</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="./assets/img/project-1.jpg" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/img/project-1.jpg" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/img/project-2.jpg" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/img/project-3.jpg" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/img/blog1.png" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/img/project-1.jpg" />
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- custom js link-->
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
