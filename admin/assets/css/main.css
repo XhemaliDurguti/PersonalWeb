@@ -6,13 +6,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --main-bg-color: #eee;
+    --backgorund-color: #054468;
+    --selection-bg: #1abc9c4d;
+    --second-color: #054469;
+    --button-color: #0769b9;
+}
+
 body {
-    background: #eee;
+    background: var(--main-bg-color);
     overflow: hidden;
 }
 
 ::selection {
-    background: rgba(26, 188, 156, 0.3);
+    background: var(--selection-bg);
 }
 
 .container {
@@ -30,7 +38,7 @@ body {
 
 .wrapper .title {
     height: 90px;
-    background: #16a085;
+    background: var(--backgorund-color);
     border-radius: 5px 5px 0 0;
     color: #fff;
     font-size: 30px;
@@ -62,8 +70,8 @@ body {
 }
 
 form .row input:focus {
-    border-color: #16a085;
-    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+    border-color: rgb(7, 105, 185);
+    box-shadow: inset 0px 0px 2px 2px var(--selection-bg);
 }
 
 form .row input::placeholder {
@@ -76,8 +84,8 @@ form .row input::placeholder {
     height: 100%;
     color: #fff;
     font-size: 18px;
-    background: #16a085;
-    border: 1px solid #16a085;
+    background: var(--backgorund-color);
+    border: 1px solid var(--button-color);
     border-radius: 5px 0 0 5px;
     display: flex;
     align-items: center;
@@ -89,7 +97,7 @@ form .row input::placeholder {
 }
 
 .wrapper form .pass a {
-    color: #16a085;
+    color: var(--button-color);
     font-size: 17px;
     text-decoration: none;
 }
@@ -103,26 +111,17 @@ form .row input::placeholder {
     font-size: 20px;
     font-weight: 500;
     padding-left: 0px;
-    background: #16a085;
+    background: var(--button-color);
     border: 1px solid #16a085;
     cursor: pointer;
 }
 
 form .button input:hover {
-    background: #12876f;
+    background: var(--second-color);
 }
 
 .wrapper form .signup-link {
     text-align: center;
     margin-top: 20px;
     font-size: 17px;
-}
-
-.wrapper form .signup-link a {
-    color: #16a085;
-    text-decoration: none;
-}
-
-form .signup-link a:hover {
-    text-decoration: underline;
 }

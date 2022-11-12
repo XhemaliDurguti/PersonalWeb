@@ -1,147 +1,83 @@
-<?php 
-    include 'includes/header.php';
-    include 'includes/sidebar.php';
-?>   
+<?php
+include 'includes/header.php'; ?>
 
-    <!-- CONTENT -->
-   
-    <?php
-        include 'includes/navbar.php';
-    ?>
-        <!-- MAIN -->
-        <main>
-            <div class="head-title">
-                <div class="left">
-                    <h1>Dashboard</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li><i class='bx bx-chevron-right'></i></li>
-                        <li>
-                            <a class="active" href="#">Home</a>
-                        </li>
-                    </ul>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </div>
             </div>
 
-            <ul class="box-info">
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./assets/image/about.jpg" alt="profile_picture" />
+                <h3>Xhemali Durguti</h3>
+                <p>Designer</p>
+            </div>
+            <ul>
                 <li>
-                    <i class='bx bxs-calendar-check'></i>
-                    <span class="text">
-                        <h3>1020</h3>
-                        <p>New Order</p>
-                    </span>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
                 </li>
                 <li>
-                    <i class='bx bxs-group'></i>
-                    <span class="text">
-                        <h3>2834</h3>
-                        <p>Visitors</p>
-                    </span>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
                 </li>
                 <li>
-                    <i class='bx bxs-dollar-circle'></i>
-                    <span class="text">
-                        <h3>$2543</h3>
-                        <p>Total Sales</p>
-                    </span>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Perfomance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
                 </li>
             </ul>
+        </div>
 
+    </div>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function() {
+            document.querySelector("body").classList.toggle("active");
+        });
+    </script>
+</body>
 
-            <div class="table-data">
-                <div class="order">
-                    <div class="head">
-                        <h3>Recent Orders</h3>
-                        <i class='bx bx-search'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User</th>
-                                <th>Date Order</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="img/people.png">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/people.png">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/people.png">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status process">Process</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/people.png">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/people.png">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="todo">
-                    <div class="head">
-                        <h3>Todos</h3>
-                        <i class='bx bx-plus'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <ul class="todo-list">
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <!-- MAIN -->
-    </section>
-<?php 
-    include 'includes/footer.php';
-?>
+</html>
