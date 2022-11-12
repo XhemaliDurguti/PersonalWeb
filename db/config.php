@@ -1,8 +1,12 @@
 <?php 
-    $db_host = "localhost";
-    $db_name = "portfolio";
-    $db_pass = "";
-    $db_user = "root";
+    $host = 'localhost';
+    $db = 'portfolio';
+    $charset = 'utf8mb4';
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    $username = "root";
+    $password = "";
+    $pdo = new PDO($dsn,$username,$password);
+    // print_r($pdo);
 
-    $con = mysqli_connect($db_host,$db_user,$db_pass,$db_name)or die('Error');
+    
 ?>
