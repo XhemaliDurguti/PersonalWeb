@@ -1,6 +1,5 @@
 <?php
 include 'db/config.php';
-include 'db/function.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
