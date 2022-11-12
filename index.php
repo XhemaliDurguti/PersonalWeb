@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Header design -->
-    <header>
-        <a href="#" class="logo">Xh<span>e</span>ma</a>
-
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+<?php include 'include/header.php'?>
     <!-- Home Section desig -->
     <section class="home" id="home">
         <div class="home-text">
@@ -154,15 +124,15 @@
             <h4>If You Have Any Project In Your Mind.</h4>
             <p>I`m a UI\UX Designer -creating blog & brave interface design for companies all across the world.</p>
             <div class="list">
-                <li><a href="#">049135136</a></li>
-                <li><a href="#">xdurguti7@gmail.com</a></li>
+                <li><a href="#"><?=$personal_info['phone']?></a></li>
+                <li><a href="#"><?=$personal_info['email']?></a></li>
                 <li><a href="#">Like Share & Subsribe</a></li>
             </div>
             <div class="contact-icons">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="<?= $personal_info['facebook'] ?>" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="#<?=$personal_info['twitter']?>"><i class='bx bxl-twitter'></i></a>
+                <a href="<?=$personal_info['instagram']?>"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="<?=$personal_info['youtube'] ?>"><i class='bx bxl-youtube'></i></a>
             </div>
         </div>
         <div class="contact-form">
@@ -175,17 +145,4 @@
             </form>
         </div>
     </section>
-    <!-- end Section design -->
-    <section class="end">
-        <div class="last-test">
-            <p>Copyright &copy; 2022 By Xhemali Durguti All Rights Reserved</p>
-        </div>
-        <div class="top">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </section>
-    <!-- custom js link-->
-    <script type="text/javascript" src="./assets/js/script.js"></script>
-</body>
-
-</html>
+ <?php include 'include/footer.php';?>
