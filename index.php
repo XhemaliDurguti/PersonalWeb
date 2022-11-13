@@ -51,7 +51,7 @@
                 </div>
                 <h3><?= $title ?></h3>
                 <p><?= $desc ?></p>
-                <a href="<?=$id?>" class="read">Read More</a>
+                <a href="<?= $id ?>" class="read">Read More</a>
             </div>
         <?php
         }
@@ -83,15 +83,28 @@
         <h2><span>Latest</span> Project</h2>
     </div>
     <div class="portfolio-content">
-        <div class="row">
-            <img src="./assets/img/project-1.jpg" />
-            <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
+        <?php
+        $sql = "SELECT * FROM projects WHERE id LIMIT 6";
+        $res = mysqli_query($con, $sql);
+        while ($projects = mysqli_fetch_array($res)) {
+            $id = $projects['id'];
+            $title = $projects['title'];
+            $desc = $projects['description'];
+            $img = $projects['image'];
+        ?>
+            <div class="row">
+                <img src="./assets/img/<?=$img?>" />
+                <div class="layer">
+                    <h5><?=$title?></h5>
+                    <p><?=substr($desc,0,150)?></p>
+                    <a href="<?=$id?>"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
-        </div>
-        <div class="row">
+        <?php
+        }
+        ?>
+
+        <!-- <div class="row">
             <img src="./assets/img/project-1.jpg" />
             <div class="layer">
                 <h5>Visual Design</h5>
@@ -130,7 +143,7 @@
                 <p>Check out 10 Best Design's updates for the top web design & development companies.</p>
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </section>
