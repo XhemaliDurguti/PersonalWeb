@@ -8,7 +8,7 @@
         </div>
         <h1><?=$name?></h1>
         <h3><?=$tit[0].' '.$tit[1]?> <span><?=$tit[2]?></span></h3>
-        <p><?=substr($desc,0,75)?></p>
+        <p><?=substr($desc,0,70)?></p>
         <a href="#contact" class="btn">Say Hi</a>
         <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>Watch My Work</a>
     </div>
@@ -17,7 +17,7 @@
 <!-- about section design -->
 <section class="about" id="about">
     <div class="about-img">
-        <img src="./assets/img/about.jpg" alt="">
+        <img src="./assets/img/<?=$image?>" alt="">
     </div>
     <div class="about-text">
         <h2>About <span>Me</span></h2>
@@ -35,10 +35,10 @@
     <div class="services-content">
         <div class="box">
             <div class="s-icons">
-                <i class="bx bx-mobile-alt"></i>
+                <i class="<?=$icon?>"></i>
             </div>
-            <h3>Web Design</h3>
-            <p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+            <h3><?= $title?></h3>
+            <p><?=$desc?></p>
             <a href="#" class="read">Read More</a>
         </div>
 
