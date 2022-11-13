@@ -50,7 +50,7 @@
                     <i class="<?= $icon ?>"></i>
                 </div>
                 <h3><?= $title ?></h3>
-                <p><?= $desc ?></p>
+                <p><?=substr($desc,0,150)?></p>
                 <a href="<?= $id ?>" class="read">Read More</a>
             </div>
         <?php
