@@ -50,7 +50,7 @@
                     <i class="<?= $icon ?>"></i>
                 </div>
                 <h3><?= $title ?></h3>
-                <p><?=substr($desc,0,150)?></p>
+                <p><?= substr($desc, 0, 150) ?></p>
                 <a href="<?= $id ?>" class="read">Read More</a>
             </div>
         <?php
@@ -93,11 +93,11 @@
             $img = $projects['image'];
         ?>
             <div class="row">
-                <img src="./assets/img/<?=$img?>" />
+                <img src="./assets/img/<?= $img ?>" />
                 <div class="layer">
-                    <h5><?=$title?></h5>
-                    <p><?=substr($desc,0,150)?></p>
-                    <a href="<?=$id?>"><i class='bx bx-link-external'></i></a>
+                    <h5><?= $title ?></h5>
+                    <p><?= substr($desc, 0, 150) ?></p>
+                    <a href="<?= $id ?>"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         <?php
@@ -166,13 +166,15 @@
         </div>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="name" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email Addres" required />
-            <input type="" placeholder="Your Mobile Number" required />
-            <textarea name="" id="" cols="35" rows="10" placeholder="Your Message Here...."></textarea>
-            <input type="submit" value="Send Message" class="submit" required>
+        <form method="post" action="./db/config.php">
+            <input type="name" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email Addres" required />
+            <input type="text" name="phone" placeholder="Your Mobile Number" required />
+            <textarea name="message" id="" cols="35" rows="10" placeholder="Your Message Here...."></textarea>
+            <input type="submit" name="submit" value="Send Message" class="submit" required>
         </form>
     </div>
 </section>
-<?php include 'include/footer.php'; ?>
+<?php include 'include/footer.php';
+
+?>
