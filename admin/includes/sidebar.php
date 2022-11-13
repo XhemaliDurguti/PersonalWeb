@@ -1,54 +1,57 @@
- <!-- SIDEBAR -->
- <section id="sidebar">
-     <a href="#" class="brand">
-         <i class='bx bxs-smile'></i>
-         <span class="text">Admin</span>
-     </a>
-     <ul class="side-menu top">
-         <li class="active">
-             <a href="#">
-                 <i class='bx bxs-dashboard'></i>
-                 <span class="text">Dashboard</span>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                 <i class='bx bxs-info-circle'></i>
-                 <span class="text">About</span>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                 <i class='bx bxs-cog'></i>
-                 <span class="text">Services</span>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                 <i class='bx bxs-briefcase-alt'></i>
-                 <span class="text">Portfolio</span>
-             </a>
-         </li>
-         <li>
-             <a href="#">
-                 <i class='bx bxs-envelope'></i>
-                 <span class="text">Contact</span>
-             </a>
-         </li>
-     </ul>
-     <ul class="side-menu">
-         <li>
-             <a href="#">
-                 <i class='bx bxs-cog'></i>
-                 <span class="text">Settings</span>
-             </a>
-         </li>
-         <li>
-             <a href="#" class="logout">
-                 <i class='bx bxs-log-out-circle'></i>
-                 <span class="text">Logout</span>
-             </a>
-         </li>
-     </ul>
- </section>
- <!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="profile">
+        <img src="./assets/image/about.jpg" alt="profile_picture" />
+        <h3>Xhemali Durguti</h3>
+        <p>Designer</p>
+    </div>
+    <ul>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-desktop"></i></span>
+                <span class="item">My Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-user-friends"></i></span>
+                <span class="item">People</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                <span class="item">Perfomance</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-database"></i></span>
+                <span class="item">Development</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-chart-line"></i></span>
+                <span class="item">Reports</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-user-shield"></i></span>
+                <span class="item">Admin</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-cog"></i></span>
+                <span class="item">Settings</span>
+            </a>
+        </li>
+    </ul>
+</div>

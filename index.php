@@ -6,11 +6,11 @@
             <span class="one">Hello</span>
             <span class="two">I`m</span>
         </div>
-        <h1>Xhema</h1>
-        <h3>Web <span>Developer</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus a quasi eum.</p>
-        <a href="#" class="btn">Say Hi</a>
-        <a href="#" class="btn2"><span><i class="bx bx-play"></i></span>Watch My Work</a>
+        <h1><?=$name?></h1>
+        <h3><?=$tit[0].' '.$tit[1]?> <span><?=$tit[2]?></span></h3>
+        <p><?=substr($desc,0,75)?></p>
+        <a href="#contact" class="btn">Say Hi</a>
+        <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>Watch My Work</a>
     </div>
 </section>
 <!-- about section design -->
@@ -21,8 +21,8 @@
     </div>
     <div class="about-text">
         <h2>About <span>Me</span></h2>
-        <h4>Creative UI/UX Designer!</h4>
-        <p>Check out 10 Best Design's updates for the top web design & development companies for your needs by reviewing our list & development companies! Find the best web design. Web Design Consulting. Comprehensive Directory. Top Reviewed Design Firms. Types: Enterprise Design Firms, Startup Design Firms, Custom Design Firms, eCommerce Design Firms, App Design Firms. Custom Web Solution. 24x7 Customer Support. Secure Payment Gateway. Get A Free Web Quote. 24/7 Chat Support. Services: Web Page Design, Landing Page Design, App development, Mobile Website Design</p>
+        <h4><?=$title?></h4>
+        <p><?=substr($desc,0,600)?></p>
         <a href="#" class="btn">More About</a>
     </div>
 </section>
@@ -123,18 +123,18 @@
 <section class="contact" id="contact">
     <div class="contact-text">
         <h2>Contact <span>Me!</span></h2>
-        <h4>If You Have Any Project In Your Mind.</h4>
-        <p>I`m a UI\UX Designer -creating blog & brave interface design for companies all across the world.</p>
+        <h4><?=$slogan?></h4>
+        <p><?=$title?></p>
         <div class="list">
-            <li><a href="#">049123123</a></li>
-            <li><a href="#">xdurguti7@gmail.com</a></li>
+            <li><a href="#"><?=$phone?></a></li>
+            <li><a href="#"><?=$email?></a></li>
             <li><a href="#">Like Share & Subsribe</a></li>
         </div>
         <div class="contact-icons">
-            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-            <a href="#" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="<?=$facebook?>" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="<?=$twiter?>" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="<?=$insta?>" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="<?=$youtube?>" target="_blank"><i class='bx bxl-youtube'></i></a>
         </div>
     </div>
     <div class="contact-form">
