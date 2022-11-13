@@ -1,32 +1,35 @@
-<?php
-include 'includes/header.php'; ?>
-
-<body>
-    <div class="wrapper">
-        <div class="section">
-            <div class="top_navbar">
-                <div class="hamburger">
-                    <a href="#">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
+<?php include './includes/header.php';?>
+    <div class="main-content">
+        <div class="wrapper">
+            <div class="title">
+                <strong>Dashboard</strong>
             </div>
 
+            <div class="column">
+                <div class="col-4 text-center">
+                    <h1>5</h1>
+                    <br />
+                    Categories
+                </div>
+
+                <div class="col-4 text-center">
+                    <h1>5</h1>
+                    <br />
+                    Project
+                </div>
+
+                <div class="col-4 text-center">
+                    <h1>5</h1>
+                    <br />
+                    Services
+                </div>
+
+                <div class="col-4 text-center">
+                    <h1>5</h1>
+                    <br />
+                    Images
+                </div>
+            </div>
         </div>
-        <?php
-        include 'includes/sidebar.php';
-        ?>
-        <section class="container">
-            test
-        </section>
+
     </div>
-
-    <script>
-        var hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function() {
-            document.querySelector("body").classList.toggle("active");
-        });
-    </script>
-</body>
-
-</html>
