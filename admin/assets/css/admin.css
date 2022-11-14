@@ -20,9 +20,19 @@
     --p-font: 1.1rem;
 }
 
-a {
+
+/* a {
     text-decoration: none;
     color: var(--text-color);
+} */
+
+.btn-primary {
+    color: #fff;
+    background: #1E90FF;
+    text-decoration: none;
+    padding: 6%;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
 .logo {
@@ -44,6 +54,7 @@ a {
     width: 100%;
     color: #2a2a2a;
     font-size: 22px;
+    transition: all .40s;
 }
 
 .text-center {
@@ -76,6 +87,8 @@ a {
     width: auto;
     margin: 0 16px;
     text-decoration: none;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .menu ul li a:hover {
@@ -113,6 +126,20 @@ a {
 .col-4:hover {
     width: 16%;
     padding: 26px 41px;
+}
+
+.tbl_full {
+    width: 100%;
+}
+
+table tr th {
+    border-bottom: 1px solid #2a2a2a;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
 }
 
 
